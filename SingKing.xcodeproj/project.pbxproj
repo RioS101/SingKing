@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		53A2DCA928E2FDB1000B1AD5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 53A2DCA828E2FDB1000B1AD5 /* Kingfisher */; };
 		53A2DCB628E301C4000B1AD5 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 53A2DCB528E301C4000B1AD5 /* Swinject */; };
+		53A2DCB828E302FE000B1AD5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2DCB728E302FE000B1AD5 /* Model.swift */; };
 		53B49FA628E24FE2003104FE /* SingKingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA528E24FE2003104FE /* SingKingApp.swift */; };
-		53B49FA828E24FE2003104FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA728E24FE2003104FE /* ContentView.swift */; };
+		53B49FA828E24FE2003104FE /* BBCharsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA728E24FE2003104FE /* BBCharsListView.swift */; };
 		53B49FAA28E24FE4003104FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B49FA928E24FE4003104FE /* Assets.xcassets */; };
 		53B49FAD28E24FE4003104FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B49FAC28E24FE4003104FE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53A2DCB728E302FE000B1AD5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		53B49FA228E24FE2003104FE /* SingKing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingKing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B49FA528E24FE2003104FE /* SingKingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingKingApp.swift; sourceTree = "<group>"; };
-		53B49FA728E24FE2003104FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		53B49FA728E24FE2003104FE /* BBCharsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharsListView.swift; sourceTree = "<group>"; };
 		53B49FA928E24FE4003104FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53B49FAC28E24FE4003104FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				53B49FA528E24FE2003104FE /* SingKingApp.swift */,
-				53B49FA728E24FE2003104FE /* ContentView.swift */,
+				53B49FA728E24FE2003104FE /* BBCharsListView.swift */,
+				53A2DCB728E302FE000B1AD5 /* Model.swift */,
 				53B49FA928E24FE4003104FE /* Assets.xcassets */,
 				53B49FAB28E24FE4003104FE /* Preview Content */,
 			);
@@ -149,7 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53B49FA828E24FE2003104FE /* ContentView.swift in Sources */,
+				53A2DCB828E302FE000B1AD5 /* Model.swift in Sources */,
+				53B49FA828E24FE2003104FE /* BBCharsListView.swift in Sources */,
 				53B49FA628E24FE2003104FE /* SingKingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
