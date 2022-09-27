@@ -7,21 +7,16 @@
 
 import Foundation
 
-
-struct APIResponse: Codable {
-    var characters: [Character]
-}
-
-struct Character {
-    var id: Int
-    var name: String
-    var birthday: String
-    var occupation: [String]
-    var imageURL: String
-    var status: String
-    var nickName: String
-    var seasons: [Int]
-    var portrayed: String
+struct Character: Hashable {
+    let id: Int
+    let name: String
+    let birthday: String
+    let occupation: [String]
+    let imageURL: String
+    let status: String
+    let nickname: String
+    let seasons: [Int]
+    let portrayed: String
     
     init(id: Int, name: String, birthday: String, occupation: [String], imageURL: String, status: String, nickName: String, seasons: [Int], portrayed: String) {
         self.id = id
@@ -30,7 +25,7 @@ struct Character {
         self.occupation = occupation
         self.imageURL = imageURL
         self.status = status
-        self.nickName = nickName
+        self.nickname = nickName
         self.seasons = seasons
         self.portrayed = portrayed
     }
@@ -45,7 +40,7 @@ extension Character: Codable {
         case occupation
         case imageURL = "img"
         case status
-        case nickName
+        case nickname
         case seasons = "appearance"
         case portrayed
     }
@@ -59,7 +54,7 @@ extension Character: Codable {
         self.occupation = try container.decode([String].self, forKey: .occupation)
         self.imageURL = try container.decode(String.self, forKey: .imageURL)
         self.status = try container.decode(String.self, forKey: .status)
-        self.nickName = try container.decode(String.self, forKey: .nickName)
+        self.nickname = try container.decode(String.self, forKey: .nickname)
         self.seasons = try container.decode([Int].self, forKey: .seasons)
         self.portrayed = try container.decode(String.self, forKey: .portrayed)
     }
@@ -73,7 +68,7 @@ extension Character: Codable {
         try container.encode(self.occupation, forKey: .occupation)
         try container.encode(self.imageURL, forKey: .imageURL)
         try container.encode(self.status, forKey: .status)
-        try container.encode(self.nickName, forKey: .nickName)
+        try container.encode(self.nickname, forKey: .nickname)
         try container.encode(self.seasons, forKey: .seasons)
         try container.encode(self.portrayed, forKey: .portrayed)
     }
