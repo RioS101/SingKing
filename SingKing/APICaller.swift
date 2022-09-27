@@ -27,7 +27,6 @@ class SimpleAPICaller {
             
             do {
                 let result = try JSONDecoder().decode(expecting, from: data)
-                //TODO: think about memory leak
                 DispatchQueue.main.async {
                     completion(.success(result))
                 }

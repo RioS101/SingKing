@@ -11,19 +11,18 @@ import Foundation
 //TODO: Add protocols
 
 class ViewModel: ObservableObject {
-    @Published var characters: [Character] = []
+    @Published var characters: [Character]
     
-    static let shared = ViewModel()
-    
-    private init() {}
+    init () { self.characters = [] }
+    init(characters: [Character]) {
+        self.characters = characters
+    }
     
     func getData() {
         SimpleAPICaller.fetch(from: Constants.charactersURL, expecting: [Character].self) { [weak self] result in
             switch result {
             case .success(let characters):
-//                DispatchQueue.main.async {
                     self?.characters = characters
-//                }
                 print(characters[0].name)
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")

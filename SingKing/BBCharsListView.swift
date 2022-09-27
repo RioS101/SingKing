@@ -9,8 +9,7 @@ import SwiftUI
 import CachedAsyncImage
 
 struct BBCharsListView: View {
-    //TODO: Implementd Dependency Injection Swinject
-    @StateObject var viewModel = ViewModel.shared
+    @StateObject var viewModel: ViewModel
     @State var searchText = ""
     
     var body: some View {
@@ -53,6 +52,6 @@ struct BBCharsListView: View {
 
 struct BBCharsListView_Previews: PreviewProvider {
     static var previews: some View {
-        BBCharsListView()
+        BBCharsListView(viewModel: ViewModel())
     }
 }
