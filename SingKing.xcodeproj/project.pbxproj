@@ -19,6 +19,7 @@
 		53A2DCD228E39C7B000B1AD5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2DCB728E302FE000B1AD5 /* Model.swift */; };
 		53A2DCD328E3A1A4000B1AD5 /* BBCharsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA728E24FE2003104FE /* BBCharsListView.swift */; };
 		53A2DCD428E3A1A6000B1AD5 /* SingKingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA528E24FE2003104FE /* SingKingApp.swift */; };
+		53A2DCD628E3AA8F000B1AD5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2DCD528E3AA8F000B1AD5 /* DetailView.swift */; };
 		53B49FA628E24FE2003104FE /* SingKingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA528E24FE2003104FE /* SingKingApp.swift */; };
 		53B49FA828E24FE2003104FE /* BBCharsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA728E24FE2003104FE /* BBCharsListView.swift */; };
 		53B49FAA28E24FE4003104FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B49FA928E24FE4003104FE /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		53A2DCBD28E351D3000B1AD5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		53A2DCC628E38BB4000B1AD5 /* SingKingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingKingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A2DCC828E38BB4000B1AD5 /* SingKingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingKingTests.swift; sourceTree = "<group>"; };
+		53A2DCD528E3AA8F000B1AD5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		53B49FA228E24FE2003104FE /* SingKing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingKing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B49FA528E24FE2003104FE /* SingKingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingKingApp.swift; sourceTree = "<group>"; };
 		53B49FA728E24FE2003104FE /* BBCharsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharsListView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				53B49FA528E24FE2003104FE /* SingKingApp.swift */,
 				53B49FA728E24FE2003104FE /* BBCharsListView.swift */,
+				53A2DCD528E3AA8F000B1AD5 /* DetailView.swift */,
 				53A2DCB728E302FE000B1AD5 /* Model.swift */,
 				53B49FA928E24FE4003104FE /* Assets.xcassets */,
 				53B49FAB28E24FE4003104FE /* Preview Content */,
@@ -240,6 +243,7 @@
 				53A2DCBC28E3327F000B1AD5 /* APICaller.swift in Sources */,
 				53A2DCB828E302FE000B1AD5 /* Model.swift in Sources */,
 				53B49FA828E24FE2003104FE /* BBCharsListView.swift in Sources */,
+				53A2DCD628E3AA8F000B1AD5 /* DetailView.swift in Sources */,
 				53A2DCBA28E31D3C000B1AD5 /* ViewModel.swift in Sources */,
 				53B49FA628E24FE2003104FE /* SingKingApp.swift in Sources */,
 				53A2DCBE28E351D3000B1AD5 /* Helper.swift in Sources */,

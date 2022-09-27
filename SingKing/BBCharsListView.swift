@@ -16,22 +16,24 @@ struct BBCharsListView: View {
         NavigationView {
             List {
                 ForEach(filteredCharacters, id: \.self) { character in
-                    HStack {
-                        CachedAsyncImage(url: URL(string: character.imageURL), scale: 0.2) { image in
-                            image.resizable()
-                        } placeholder: {
-                            ProgressView()
-                        }
-                        .frame(width: 70, height: 80)
-                        .aspectRatio(contentMode: .fit)
-                        .cornerRadius(35)
+                    NavigationLink(destination: DetailView(character: character)) {
+                        HStack {
+                            CachedAsyncImage(url: URL(string: character.imageURL), scale: 0.2) { image in
+                                image.resizable()
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            .frame(width: 70, height: 80)
+                            .aspectRatio(contentMode: .fit)
+                            .cornerRadius(35)
 
-                        Spacer()
-                        
-                        Text(character.name)
-                            .bold()
-                        
-                        Spacer()
+                            Spacer()
+                            
+                            Text(character.name)
+                                .bold()
+                            
+                            Spacer()
+                        }
                     }
                 }
             }
