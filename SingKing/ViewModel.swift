@@ -6,9 +6,6 @@
 //
 
 import Foundation
-//import SwiftUI ???
-
-//TODO: Add protocols
 
 class ViewModel: ObservableObject {
     @Published var characters: [Character]
