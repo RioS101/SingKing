@@ -11,11 +11,12 @@ import CachedAsyncImage
 struct BBCharsListView: View {
     //TODO: Implementd Dependency Injection Swinject
     @StateObject var viewModel = ViewModel.shared
+    @State var searchText = ""
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.characters, id: \.self) { character in
+                ForEach(filteredCharacters, id: \.self) { character in
                     HStack {
                         CachedAsyncImage(url: URL(string: character.imageURL), scale: 0.2) { image in
                             image.resizable()
@@ -35,11 +36,18 @@ struct BBCharsListView: View {
                     }
                 }
             }
+            .searchable(text: $searchText)
             .navigationTitle("BB: Characters")
             .onAppear {
                 viewModel.getData()
             }
         }
+    }
+    
+    var filteredCharacters: [Character] {
+        return searchText.isEmpty ? viewModel.characters : viewModel.characters.filter({
+            $0.name.lowercased().contains(searchText.lowercased())
+        })
     }
 }
 
