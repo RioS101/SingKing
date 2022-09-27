@@ -12,17 +12,36 @@
 		53A2DCBC28E3327F000B1AD5 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2DCBB28E3327F000B1AD5 /* APICaller.swift */; };
 		53A2DCBE28E351D3000B1AD5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2DCBD28E351D3000B1AD5 /* Helper.swift */; };
 		53A2DCC128E36212000B1AD5 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 53A2DCC028E36212000B1AD5 /* CachedAsyncImage */; };
+		53A2DCC928E38BB4000B1AD5 /* SingKingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2DCC828E38BB4000B1AD5 /* SingKingTests.swift */; };
+		53A2DCCF28E39854000B1AD5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2DCB928E31D3C000B1AD5 /* ViewModel.swift */; };
+		53A2DCD028E39A8D000B1AD5 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2DCBB28E3327F000B1AD5 /* APICaller.swift */; };
+		53A2DCD128E39A93000B1AD5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2DCBD28E351D3000B1AD5 /* Helper.swift */; };
+		53A2DCD228E39C7B000B1AD5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2DCB728E302FE000B1AD5 /* Model.swift */; };
+		53A2DCD328E3A1A4000B1AD5 /* BBCharsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA728E24FE2003104FE /* BBCharsListView.swift */; };
+		53A2DCD428E3A1A6000B1AD5 /* SingKingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA528E24FE2003104FE /* SingKingApp.swift */; };
 		53B49FA628E24FE2003104FE /* SingKingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA528E24FE2003104FE /* SingKingApp.swift */; };
 		53B49FA828E24FE2003104FE /* BBCharsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B49FA728E24FE2003104FE /* BBCharsListView.swift */; };
 		53B49FAA28E24FE4003104FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B49FA928E24FE4003104FE /* Assets.xcassets */; };
 		53B49FAD28E24FE4003104FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B49FAC28E24FE4003104FE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		53A2DCCA28E38BB4000B1AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53B49F9A28E24FE2003104FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53B49FA128E24FE2003104FE;
+			remoteInfo = SingKing;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		53A2DCB728E302FE000B1AD5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		53A2DCB928E31D3C000B1AD5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		53A2DCBB28E3327F000B1AD5 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		53A2DCBD28E351D3000B1AD5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		53A2DCC628E38BB4000B1AD5 /* SingKingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingKingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A2DCC828E38BB4000B1AD5 /* SingKingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingKingTests.swift; sourceTree = "<group>"; };
 		53B49FA228E24FE2003104FE /* SingKing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingKing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B49FA528E24FE2003104FE /* SingKingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingKingApp.swift; sourceTree = "<group>"; };
 		53B49FA728E24FE2003104FE /* BBCharsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharsListView.swift; sourceTree = "<group>"; };
@@ -31,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		53A2DCC328E38BB4000B1AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53B49F9F28E24FE2003104FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +68,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53A2DCC728E38BB4000B1AD5 /* SingKingTests */ = {
+			isa = PBXGroup;
+			children = (
+				53A2DCC828E38BB4000B1AD5 /* SingKingTests.swift */,
+			);
+			path = SingKingTests;
+			sourceTree = "<group>";
+		};
 		53B49F9928E24FE2003104FE = {
 			isa = PBXGroup;
 			children = (
 				53B49FA428E24FE2003104FE /* SingKing */,
+				53A2DCC728E38BB4000B1AD5 /* SingKingTests */,
 				53B49FA328E24FE2003104FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				53B49FA228E24FE2003104FE /* SingKing.app */,
+				53A2DCC628E38BB4000B1AD5 /* SingKingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +120,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		53A2DCC528E38BB4000B1AD5 /* SingKingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A2DCCC28E38BB4000B1AD5 /* Build configuration list for PBXNativeTarget "SingKingTests" */;
+			buildPhases = (
+				53A2DCC228E38BB4000B1AD5 /* Sources */,
+				53A2DCC328E38BB4000B1AD5 /* Frameworks */,
+				53A2DCC428E38BB4000B1AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53A2DCCB28E38BB4000B1AD5 /* PBXTargetDependency */,
+			);
+			name = SingKingTests;
+			productName = SingKingTests;
+			productReference = 53A2DCC628E38BB4000B1AD5 /* SingKingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		53B49FA128E24FE2003104FE /* SingKing */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53B49FB028E24FE4003104FE /* Build configuration list for PBXNativeTarget "SingKing" */;
@@ -114,6 +168,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					53A2DCC528E38BB4000B1AD5 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 53B49FA128E24FE2003104FE;
+					};
 					53B49FA128E24FE2003104FE = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -136,11 +194,19 @@
 			projectRoot = "";
 			targets = (
 				53B49FA128E24FE2003104FE /* SingKing */,
+				53A2DCC528E38BB4000B1AD5 /* SingKingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		53A2DCC428E38BB4000B1AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53B49FA028E24FE2003104FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +219,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		53A2DCC228E38BB4000B1AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A2DCD328E3A1A4000B1AD5 /* BBCharsListView.swift in Sources */,
+				53A2DCD228E39C7B000B1AD5 /* Model.swift in Sources */,
+				53A2DCD428E3A1A6000B1AD5 /* SingKingApp.swift in Sources */,
+				53A2DCCF28E39854000B1AD5 /* ViewModel.swift in Sources */,
+				53A2DCD028E39A8D000B1AD5 /* APICaller.swift in Sources */,
+				53A2DCC928E38BB4000B1AD5 /* SingKingTests.swift in Sources */,
+				53A2DCD128E39A93000B1AD5 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53B49F9E28E24FE2003104FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,7 +248,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		53A2DCCB28E38BB4000B1AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53B49FA128E24FE2003104FE /* SingKing */;
+			targetProxy = 53A2DCCA28E38BB4000B1AD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		53A2DCCD28E38BB4000B1AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V8JNQBSN5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = projectum.SingKingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingKing.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SingKing";
+			};
+			name = Debug;
+		};
+		53A2DCCE28E38BB4000B1AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V8JNQBSN5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = projectum.SingKingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingKing.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SingKing";
+			};
+			name = Release;
+		};
 		53B49FAE28E24FE4003104FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -344,6 +470,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		53A2DCCC28E38BB4000B1AD5 /* Build configuration list for PBXNativeTarget "SingKingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A2DCCD28E38BB4000B1AD5 /* Debug */,
+				53A2DCCE28E38BB4000B1AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		53B49F9D28E24FE2003104FE /* Build configuration list for PBXProject "SingKing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

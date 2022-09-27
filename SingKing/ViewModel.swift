@@ -19,8 +19,7 @@ class ViewModel: ObservableObject {
         SimpleAPICaller.fetch(from: Constants.charactersURL, expecting: [Character].self) { [weak self] result in
             switch result {
             case .success(let characters):
-                    self?.characters = characters
-                print(characters[0].name)
+                self?.characters = characters
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")
             }
